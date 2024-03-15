@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal PortFolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/fa3656dce6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">PortFolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hi, I'm <span>Vishal</span><br />
+            Chhoker From Sonipat
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- //---------------------------About  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a passionate and versatile Java Full Stack Developer with a
+              relentless curiosity for building exceptional web applications.
+              With 1.5+ years of experience, I've honed my skills in both
+              frontend and backend development, specializing in Java, Spring
+              Framework, and modern web technologies.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Full Stack Developer</span><br />Full Stack App
+                  Development
+                </li>
+                <li>
+                  <span>Frontend Developer </span><br />Frontend App Development
+                </li>
+                <li>
+                  <span>Backend Developer</span><br />Backend App Development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-2023</span><br />Associate Engineer at Allstate
+                  Solution Private Limited
+                </li>
+                <!-- <li><span>Frontend Developer </span><br>Frontend App Development</li>
+                    <li><span>Backend Developer</span><br>Backend App Development</li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016</span><br />10th From DAV Public School Ganaur
+                </li>
+                <li>
+                  <span>2018 </span><br />12th From DAV Public School Ganaur
+                </li>
+                <li>
+                  <span>2022</span><br />B.Tech From Chandigarh Engineering
+                  College Landran Mohali
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------services------------ -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Full Stack Developer</h2>
+            <p>
+              I bring a holistic skill set to full-stack development, with
+              proficiency in both frontend and backend technologies. On the
+              frontend, I specialize in crafting elegant and responsive user
+              interfaces using HTML, CSS, and JavaScript, with additional
+              expertise in React for building dynamic web applications. As a
+              backend developer, I am familiar with Java and the features of
+              Java 8, utilizing the Spring Boot framework to create robust and
+              scalable applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-code"></i>
+            <h2>Frontend Developer</h2>
+            <p>
+              I specialize in frontend development with a solid command of
+              essential technologies such as HTML, CSS, and JavaScript.
+              Proficient in creating visually appealing and responsive web
+              interfaces, I extend my capabilities to React, where I excel in
+              building dynamic and engaging applications. My familiarity with
+              JSON allows seamless integration and manipulation of data for
+              enhanced frontend functionality.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Backend Developer</h2>
+            <p>
+              With a strong foundation in backend development, I am proficient
+              in Java and well-versed in the features of Java 8. My expertise
+              extends to building robust and scalable web applications using the
+              Spring Boot framework. I specialize in designing and implementing
+              RESTful APIs, ensuring efficient communication between frontend
+              and backend systems.I bring a comprehensive skill set to the realm
+              of backend development.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------Portfolio---------------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/post-1.jpg" />
+            <div class="layer">
+              <h3>Movie App</h3>
+              <p>
+                A user-friendly a web application that allows users to download
+                movies and watch trailers.It provides a simple and user-friendly
+                interface to browse and discover movies and view details and
+                even save favorites for future reference.
+              </p>
+              <a href="https://vishal-movie-app.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Notes App</h3>
+              <p>
+                A user-friendly web application that empowers users to manage
+                their notes effortlessly. Whether you want to jot down quick
+                thoughts, save important information, or organize your ideas,
+                this app has you covered.
+              </p>
+              <a href="https://vishal-notes-app.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Notes App</h3>
+              <p>
+                A user-friendly web application that empowers users to manage
+                their notes effortlessly. Whether you want to jot down quick
+                thoughts, save important information, or organize your ideas,
+                this app has you covered.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- -------------------------Content----------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>vishalchhoker1509@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>7015052032,8813833956</p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/vishal-chhoker-40a744194"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/VishalChhoker/"
+                ><i class="fa-brands fa-square-git"></i
+              ></a>
+            </div>
+            <a href="images/VishalChhokerResume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------Footer----------------- -->
+      <div class="copyright">
+        <p>Copyright @ Vishal<i class="fa-solid fa-heart"></i>Chhoker</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
